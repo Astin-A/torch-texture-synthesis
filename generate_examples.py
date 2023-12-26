@@ -11,7 +11,7 @@ for filename in os.listdir(INPUT_DIR):
   for k in KERNEL_SIZES:
     output_file = '%s_%d_k%d%s' % (basename, SIZE, k, ext)
     output_file = os.path.join(OUTPUT_DIR, output_file)
-    cmd = ('th synthesis.lua -source %s -output_file %s '
+    cmd = ('lua53.exe synthesis.lua -source %s -output_file %s '
            '-height %d -width %d -k %d') % (
                input_file,
                output_file,
