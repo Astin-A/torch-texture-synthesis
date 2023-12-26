@@ -18,5 +18,5 @@ for filename in os.listdir(INPUT_DIR):
                SIZE,
                SIZE,
                k)
-    print cmd
+    print(cmd)
     subprocess.call(cmd, shell=True)
